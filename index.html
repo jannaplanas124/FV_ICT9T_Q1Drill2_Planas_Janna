@@ -3,98 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q1 Drill 2</title>
-    <style>
-        body{
-            font-family: 'Gill Sans';
-            background-color: blanchedalmond;
-            margin: 0;
-            min-height: auto;
-        }
-        section{
-            display: block;
-            margin: auto;
-            width: 700px;
-            height: auto;
-            background-color: rgb(189, 208, 255);
-            box-shadow: 0px 3px 10px rgb(0, 0, 0);
-            padding: 15px;
-        }
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        header{
-            text-align: center;
-        }
-        img{
-            height: 100px;
-            width: 100px;
-            display: block;
-            margin: auto;
-            border-radius: 100%;
-        }
+<style>
 
-        select, input[type="submit"], textarea{
-            width:100%;
-            border-radius: 5px;}
+    body{
+        font-family: 'Gill Sans MT';
+        text-align: center;
+    }
 
-    </style>
+    nav{
+        font-size: large;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    }
+
+
+</style>
+
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#Home"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGWMliic2yX4A8KaM5AP99wxYDDubpMTUsDhyHWKdYmoUUNZZYomypEc&s=10" alt="animelogo" class="rounded-circle" style="height: 60px; width: 60px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#Home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">Academic Programs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button class="btn btn-primary" type="button" style="font-size: large;">My Portal</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
     <header>
-        <h1>Rate a Movie</h1>
-        <img src="https://cdn.pixabay.com/photo/2022/07/17/19/22/movie-7328179_640.png" alt="movie logo">
-        <p>Submit a rating and a review about one of the movies.</p>
+    <div class="container-fluid m-0 p-0">
+        <div class="row">
+            <div class="col">
+                <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/053bbc8c-f68a-4a6f-ac1e-73adfc595e01/HOME+1+-+RAF08085.jpg" alt="homepicture" class="img-fluid w-100 h-90">
+            </div>
+        </div>
+    </div>
     </header>
-    <br>
 
-    <section>
-        <form action="">
-            <label for="movie">Select a Movie</label>
-            <select id="movie" name="movie">
-                <option value="movie 1">The Penthouse: War in Life</option>
-                <option value="movie 2">L.DK (2014)</option>
-                <option value="movie 3">Train to Busan</option>
-            </select>
-            <br>
+    <br><br>
 
-            <label for="Genre">Genre/s</span></label>
-            <br>
-            <input type="checkbox" id="Genre1" name="genre1">
-            <label for="Genre1">Drama</label>
-            <input type="checkbox" id="Genre2" name="genre2">
-            <label for="Genre2">Romance</label>
-            <input type="checkbox" id="Genre3" name="genre3">
-            <label for="Genre3">Comedy</label>
-            <input type="checkbox" id="Genre4" name="genre4">
-            <label for="Genre4">Horror</label>
-            <input type="checkbox" id="Genre5" name="genre5">
-            <label for="Genre5">Others</label>
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8">
+             <h1 class="fw-bold" style="color: rgb(24, 115, 151);">OB Montessori Center</h1> 
+             <br> 
+             <div id="Home">
+                <p>At Operation Brotherhood Montessori Center, every child learns through Dr. Maria Montessori's hollistic approach. OBMC is a progressive pre-k to 12 co-educational school in which we blend tradition and innovation in preparation for the child's life.</p>
+                <p>Our mission is to prepare students in becoming the future leaders of the society. Explore our programs and discover the vibrant community of OBMC.</p>
+            </div>
+            </div>
+        </div>
+    </div>
 
-            <br> <br>
-            <label for="rate"></label>
-            <input type="radio" id="rate1" name="rating" value="rate1">
-            <label for="rate1">⭐</label>
-            <input type="radio" id="rate2" name="rating" value="rate2">
-            <label for="rate2">⭐⭐</label>
-            <input type="radio" id="rate3" name="rating" value="rate3">
-            <label for="rate3">⭐⭐⭐</label>
-            <input type="radio" id="rate4" name="rating" value="rate4">
-            <label for="rate4">⭐⭐⭐⭐</label>
-            <input type="radio" id="rate5" name="rating" value="rate5">
-            <label for="rate5">⭐⭐⭐⭐⭐</label>
-            <br><br>
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg">
+             <h1 class="fw-bold" style="color: rgb(24, 115, 151);">Academic Programs</h1> 
+             <br> 
+             <div id="About">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/7023a10d-33fe-49d5-a92e-aab29bd6a9c1/RAF07800.JPG" alt="Casa" style="width: 200px; height: 300px; box-shadow:0px 3px 10px rgb(0, 0, 0.5);">
+                        <br><br>
+                        <h3 style="color: rgb(24, 115, 151);">Casa</h3>
+                        <p class="fst-italic">Ages 1-3</p>
+                            <button class="btn btn-info rounded" type="button" style="font-size: large; ">Inquire Now</button>
+                    </div>
 
-            <textarea id="review" name="review" cols="40" rows="4" placeholder="Write your review here..."></textarea>
+                <div class="col">
+                        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/e4178327-c19d-4d66-bf83-e45da3699a2f/PRIMARY+PROGRAM+2+-+RAF08178.JPG?format=2500w" alt="Primary" style="width: 200px; height: 300px; box-shadow:0px 3px 10px rgb(0, 0, 0.5);">
+                        <br><br>
+                        <h3 style="color: rgb(24, 115, 151);">Primary</h3>
+                        <p class="fst-italic">Ages 6-8</p>
+                    </div>
 
-            <br><br>
+                <div class="col">
+                        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/65553d2a-3858-4495-b594-b5b6e1e94880/JAR_2755a.jpg?format=2500w" alt="Intermediate" style="width: 200px; height: 300px; box-shadow:0px 3px 10px rgb(0, 0, 0.5);">
+                        <br><br>
+                        <h3 style="color: rgb(24, 115, 151);">Intermediate</h3>
+                        <p class="fst-italic">Ages 9-12</p>
+                    </div>
 
-            <input type="submit" id="submit" name="submit" value="Submit a Review">
-            <br><br>
-            For more review tips, click <a href="https://www.fantasy-animation.org/current-posts/how-to-write-a-movie-review-a-step-by-step-guide" target="_blank">here</a>
-        </form>
-    </section>
+                <div class="col">
+                        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/34c06703-4f10-4241-bd16-8680c9073ca9/OBMC-HS---REQUIREMENTS---AY-2024.jpg.jpg" alt="Junior" style="width: 200px; height: 300px; box-shadow:0px 3px 10px rgb(0, 0, 0.5);">
+                        <br><br>
+                        <h3 style="color: rgb(24, 115, 151);">Junior High School</h3>
+                        <p class="fst-italic">Ages 13-16</p>
+                    </div>
+
+                <div class="col">
+                        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/5e670fdc-363a-4709-9fd5-3b4707226827/RAF09461.JPG?format=2500w" alt="Senior" style="width: 200px; height: 300px; box-shadow:0px 3px 10px rgb(0, 0, 0.5); object-fit: cover;">
+                        <br><br>
+                        <h3 style="color: rgb(24, 115, 151);">Senior High School</h3>
+                        <p class="fst-italic">Ages 17-18</p>
+                    </div>
+            
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
 
-<!--References: 
-Smith, S. (2026, July 3). How to write a movie Review (A Step-by-Step Guide) — Fantasy/Animation. Fantasy/Animation. https://www.fantasy-animation.org/current-posts/how-to-write-a-movie-review-a-step-by-step-guide
-https://pixabay.com/vectors/movie-video-film-cinema-popcorn-7328179/
+<!--https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit-->
